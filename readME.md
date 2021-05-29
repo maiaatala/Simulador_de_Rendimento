@@ -14,7 +14,7 @@ Programa proposto durante aula de laboratório de programação I
 
 ## 2. Introdução
 
-O programa tem a intenção de calcular qual é o valor acumulado após uma aplicação mensal, como o valor acumulado apos depósitos mensais na poupança
+O [programa](Simulador_de_Rendimento.c) tem a intenção de calcular qual é o valor acumulado após uma aplicação mensal, como o valor acumulado apos depósitos mensais na poupança
 
 Linguagem Utilizada: C
 
