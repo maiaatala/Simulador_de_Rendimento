@@ -35,4 +35,5 @@ Faculdade: Unemat :school:
 ## 4. Informaçoes sobre o programa
 
 O Programa requer como entrada o valor do depósito, a taxa mensal e a quantidade de meses que os depósitos vao durar.
+E como saída o programa entrega o valor total acumulado e o valor do rendimento.
 Além disso, o program apresenta um loop `do{ ... }while( )` para possibilitar a reutilizaçãodo mesmo
