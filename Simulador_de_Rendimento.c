@@ -4,12 +4,12 @@
 
 /* programa para calcular
 valor acumulado em rendimento
-sob depósitos mensais, como a polpança */
+sob depósitos mensais, como a poupança */
 
 float calculo_valor_ac(float aplicacao, float tx, int m)
 {
     float   va;
-    //formula utilizada para calcular o valor final da aplicação
+    //formula utilizada para calcular o valor acumulado da aplicação
     va  =   (aplicacao*(pow((1+tx),m)-1))/tx;
 
     return  (va);
@@ -36,7 +36,7 @@ void simulador_de_rendimento()
     //saida de dados
     printf  ("\n-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-\n");
     printf  ("O valor acumulado e: %5.2f reais\n", valor_ac);
-    printf  ("O valor do rendimento e de: %5.2f reais \n", valor_ac - v_aplicacao*meses);
+    printf  ("O valor do rendimento e de: %5.2f reais \n", valor_ac - v_aplicacao*meses);  //para mostrar apenas foi ganho atravez da taxa
     printf  ("-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-=x=-\n");
 
 }
@@ -67,7 +67,7 @@ int main()
     printf  ("--------------------------------------------------------------------------------------\n");
 
     //Loop do programa
-    /* loop repete enquanto o usua esolher que sim ('s')
+    /* loop repete enquanto o usuario escolher que sim ('s')
     possibilitando a reutilizaçao do programa */
     do
     {
@@ -78,7 +78,6 @@ int main()
     }while((escolha == 's')||(escolha == 'S')); //C is case sensitive
 
     //Credits
-    //printf  ("Obrigada por utilizar o programa. \n\nAutor:\t\tAna Atala  \nData:\t\tMaio 20, 2021  \nMateria:\tLab Programacao I  \nFaculdade:\tUnemat  \n\n");
     credits();
     system  ("pause");
     return  (0);
