@@ -23,11 +23,11 @@ void simulador_de_rendimento()
 
     //entrada de dados
     printf  ("\nInsira o valor a ser aplicado mensalmente: ");
-    scanf   ("%f", &v_aplicacao);
+    scanf   (" %f", &v_aplicacao);
     printf  ("Insira a taxa mensal em %% (o valor sera dividido por 100): ");
-    scanf   ("%f", &taxa);
+    scanf   (" %f", &taxa);
     printf  ("Insira a quantidade de meses da aplicacao: ");
-    scanf   ("%i", &meses);
+    scanf   (" %i", &meses);
 
     //processamento de dados
     taxa        = taxa/100;
